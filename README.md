@@ -40,19 +40,19 @@ The gameboy has all of the components necessary to make a given game experience 
 
 ### what Harnesses are provided by this library?
 
-* __CamelContextLifecycleHarness__ provides a means of overriding any of the methods in the CamelContextLifecycle object with new behavior depending on state of constructor boolean argument. This includes modifying the contents of the JNDI registry. See contents of package ```net.charter.camel.harness.test.context.lifecycle``` for an example. 
+* __CamelContextLifecycleHarness__ provides a means of overriding any of the methods in the CamelContextLifecycle object with new behavior depending on state of constructor boolean argument. This includes modifying the contents of the JNDI registry. See contents of package ```com.davidholiday.camel.harness.test.context.lifecycle``` for an example. 
 
 * __RouteBuilderHarness__ provides a set of names and methods to facilitate creation of routebuilder objects that conform to a standard other harnesses can automatically operate on. Automatically ensures all routes are named something that a human can understand, use to reference the source code for, and algorithmically manipulate. See ```RouteBuilderHarness``` for detail. 
 
-* __RouteTestHarness__ for ```RouteBuilders``` harnessed by ```RouteBuilderHarness``` this provides a means of testing the business-logic segment (the part of the route that doesn't involve reading/pushing data to/from a data source). The harness wraps the target route in a meta route that includes nodes before and after the target route into which pre/post processing logic of exchange contents can be injected. See contents of package ```net.charter.camel.harness.test.routes``` for an example. 
+* __RouteTestHarness__ for ```RouteBuilders``` harnessed by ```RouteBuilderHarness``` this provides a means of testing the business-logic segment (the part of the route that doesn't involve reading/pushing data to/from a data source). The harness wraps the target route in a meta route that includes nodes before and after the target route into which pre/post processing logic of exchange contents can be injected. See contents of package ```com.davidholiday.camel.harness.test.routes``` for an example. 
 
-* __ProcessorTestHarness__ does exactly what RouteTestHarness does for RouteBuilders, only this works with unharnessed Processors. The reason RouteBuilders have to be harnessed is because some standardization is required in the RouteBuilders if the RouteTestHarness is going to know what to test and what to ignore. Processors are inherently always testable so they don't require a harness. See contents of package ```net.charter.camel.harness.test.processor``` for an example. 
+* __ProcessorTestHarness__ does exactly what RouteTestHarness does for RouteBuilders, only this works with unharnessed Processors. The reason RouteBuilders have to be harnessed is because some standardization is required in the RouteBuilders if the RouteTestHarness is going to know what to test and what to ignore. Processors are inherently always testable so they don't require a harness. See contents of package ```com.davidholiday.camel.harness.test.processor``` for an example. 
 
 * __TestHarness__ is the base class for all TestHarnesses and contains a lot of the logic that makes the testing magicks happen. see ```TestHarness``` for detail.
 
 
 ### what else is here? 
 
-* package ```net.charter.camel.harness.config``` contains classes that listen for and respond to config property change events.
+* package ```com.davidholiday.camel.harness.config``` contains classes that listen for and respond to config property change events.
 
-* package ```net.charter.camel.harness.helpers``` contains classes that help load mock files and make checking an ordered list of property file locations possible.
+* package ```com.davidholiday.camel.harness.helpers``` contains classes that help load mock files and make checking an ordered list of property file locations possible.
