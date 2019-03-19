@@ -1,8 +1,8 @@
-# CAMEL-LIB
+# CAMEL-HARNESS-LIB
 
 ### what is this? 
 
-This is the core library for __Harness__, a featherweight microservices framework for [Apache Camel](http://camel.apache.org/). It contains several "Harness" classes that, along with a few helpers, constitute the backbone of the framework. An reference implementation Harness microservice is available [__here__]() that serves as the reference implementation for the framework. 
+This is the core library for __Harness__, a featherweight microservices framework for [Apache Camel](http://camel.apache.org/). It contains several "Harness" classes that, along with a few helpers, constitute the backbone of the framework. An reference implementation Harness microservice is available [__here__](https://github.com/davidholiday/camel-harness) that serves as the reference implementation for the framework. 
 
 __Camel + Harness gives you__:
 * plug-and-play insertion of Camel objects into a 'Harness' that provides boiler-plate code required for route creation, registry management, and testing. 
