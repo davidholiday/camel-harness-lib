@@ -1,5 +1,8 @@
 # CAMEL-HARNESS-LIB
 
+# this project is archived and no longer maintained. the successor project, kcar, can be found [here](https://github.com/davidholiday/kcar)
+
+
 ### what is this? 
 
 This is the core library for __Harness__, a featherweight microservices framework for [Apache Camel](http://camel.apache.org/). It contains several "Harness" classes that, along with a few helpers, constitute the backbone of the framework. An reference implementation is available [__here__](https://github.com/davidholiday/camel-harness). 
